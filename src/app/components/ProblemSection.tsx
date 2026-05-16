@@ -13,7 +13,7 @@ export default function ProblemSection() {
         </div>
 
         <h2 className="reveal text-3xl sm:text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight mb-6">
-          
+
           Downtime doesn't announce itself.<br />
           <span className="font-light italic">It quietly destroys revenue.</span>
         </h2>
@@ -28,15 +28,15 @@ export default function ProblemSection() {
             <div
               key={i}
               className="flex gap-4 bg-surface rounded-xl p-6 border border-border/60 shadow-sm hover:shadow-md transition-all duration-300 ease-out">
-              
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5" role="img" aria-label={point?.title}>
-                  <span className="text-primary text-lg" aria-hidden="true">{point?.icon}</span>
-                </div>
-                <div>
-                  <div className="text-foreground font-semibold text-sm mb-1">{point?.title}</div>
-                  <div className="text-muted text-sm leading-relaxed">{point?.description}</div>
-                </div>
+
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5" role="img" aria-label={point?.title}>
+                <span className="text-primary text-lg" aria-hidden="true">{point?.icon}</span>
               </div>
+              <div>
+                <div className="text-foreground font-semibold text-sm mb-1">{point?.title}</div>
+                <div className="text-muted text-sm leading-relaxed">{point?.description}</div>
+              </div>
+            </div>
           )}
         </div>
 
@@ -58,11 +58,11 @@ export default function ProblemSection() {
           </div>
           <div className="relative min-h-[220px] md:min-h-0">
             <AppImage
-              src="https://img.rocket.new/generatedImages/rocket_gen_img_11bbea309-1772164037817.png"
+              src="https://img.MonsterX/generatedImages/ _gen_img_11bbea309-1772164037817.png"
               alt="Nexus observability dashboard showing real-time performance metrics and p99 latency spikes"
               fill
               className="object-cover opacity-60" />
-            
+
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/40 to-transparent" />
           </div>
         </div>
@@ -72,23 +72,23 @@ export default function ProblemSection() {
 }
 
 const painPoints = [
-{
-  icon: '⚡',
-  title: 'Silent API Failures',
-  description: 'Uncaught exceptions bubble up to users while legacy tools aggregate them into unreadable noise. The alert triggers 10 minutes too late.'
-},
-{
-  icon: '🔍',
-  title: 'Blind Spots in Architecture',
-  description: 'Traces break between services. When an incident occurs, engineering spends hours stitching logs together manually to find the root cause.'
-},
-{
-  icon: '📉',
-  title: 'Database Bottlenecks',
-  description: 'Slow queries pile up quietly, consuming connections and memory until the whole system locks up during a traffic spike.'
-},
-{
-  icon: '💸',
-  title: 'Runaway Cloud Costs',
-  description: 'Logging every trace without intelligent sampling means your observability bill scales linearly with traffic, destroying your margins.'
-}];
+  {
+    icon: '⚡',
+    title: 'Silent API Failures',
+    description: 'Uncaught exceptions bubble up to users while legacy tools aggregate them into unreadable noise. The alert triggers 10 minutes too late.'
+  },
+  {
+    icon: '🔍',
+    title: 'Blind Spots in Architecture',
+    description: 'Traces break between services. When an incident occurs, engineering spends hours stitching logs together manually to find the root cause.'
+  },
+  {
+    icon: '📉',
+    title: 'Database Bottlenecks',
+    description: 'Slow queries pile up quietly, consuming connections and memory until the whole system locks up during a traffic spike.'
+  },
+  {
+    icon: '💸',
+    title: 'Runaway Cloud Costs',
+    description: 'Logging every trace without intelligent sampling means your observability bill scales linearly with traffic, destroying your margins.'
+  }];
